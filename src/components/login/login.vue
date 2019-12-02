@@ -1,0 +1,24 @@
+<style src="./style.css"></style>
+<template>
+<div class="login-wrap">
+  <div class="login-form">
+    <el-form ref="form" :model="loginForm" :rules="loginFormRule">
+      <el-form-item  prop="username">
+        <el-input v-model="loginForm.username" placeholder="用户名"></el-input>
+      </el-form-item>
+      <el-form-item  prop="password">
+        <el-input type="password" v-model="loginForm.password" placeholder="密码"></el-input>
+      </el-form-item>
+      <el-form-item>
+        <el-button class="login-submit" type="primary" @click="handleLogin">登陆</el-button>
+      </el-form-item>
+    </el-form>
+  </div>
+</div>
+
+
+
+</template>
+
+<script src="./script.js"></script>
+
